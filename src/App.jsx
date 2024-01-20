@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import Contact from './components/Contact'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import WorkExperience from './components/WorkExperience'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,11 +17,11 @@ function App() {
     <>
     <div className="App flex flex-col h-screen">
       <Navbar /> 
-      <main className="flex-grow">
+      <main className="flex-grow scroll-smooth">
         <Hero />
         
         <Skills />
-        
+        <WorkExperience />
         {/* <Contact /> */}        
         <Projects />
       </main>
