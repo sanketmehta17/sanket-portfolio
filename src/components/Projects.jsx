@@ -39,16 +39,16 @@ const posts = [
   export default function Projects() {
     return (
       <div className="bg-white py-8 sm:py-8" id="Projects">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="bg-emerald-300 rounded-3xl mx-auto max-w-7xl px-6 py-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tight pt-6 text-gray-900 sm:text-4xl">Projects</h2>
           </div>
           <div className="mx-auto mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t border-gray-200 pt-6 sm:mt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
-              <article key={post.id} className="flex max-w-xl flex-col items-start transition ease-in-out duration-300 hover:translate-y-1 hover:scale-110">
+              <article key={post.id} className="flex max-w-xl flex-col items-start transition ease-in-out duration-300 hover:translate-y-1 hover:scale-100">
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a target="_blank" href={post.href}>
+                    <a target="_blank" href={post.href} className="text-black hover:text-gray-600">
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>

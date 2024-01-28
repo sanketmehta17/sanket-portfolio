@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import WorkExperience from './components/WorkExperience'
+import About from './components/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,7 @@ function App() {
       <Navbar /> 
       <main className="flex-grow scroll-smooth">
         <Hero />
-        
+        <About />
         <Skills />
         <WorkExperience />
         {/* <Contact /> */}        
