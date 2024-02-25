@@ -1,15 +1,15 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import ContactLinks from './ContactLinks'
 
 const navigation = [
-  { name: 'Home', href: '/#', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/#About', current: false },
-  { name: 'Projects', href: '/#Projects', current: false },
   { name: 'Skills', href: '/#Skills', current: false },
   { name: 'Work Experience', href: '/#WorkExperience', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Projects', href: '/#Projects', current: false },
+  { name: 'Testimonials', href: '/#Testimonials', current: false },
 ]
 
 function classNames(...classes) {
@@ -17,8 +17,9 @@ function classNames(...classes) {
 }
 
 export default function NavBar() {
+
   return (
-    <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-10">
+    <Disclosure as="nav" id="navbar" className="bg-gray-800 fixed top-0 left-0 right-0 z-10">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
@@ -49,10 +50,7 @@ export default function NavBar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
+                        className='text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
@@ -62,7 +60,7 @@ export default function NavBar() {
                 </div>
               </div>
               <div className="relative inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 md:ml-14 lg:ml-6 sm:pr-0">
-                <ContactLinks />
+                <ContactLinks parent="Navbar" />
               </div>
             </div>
           </div>
@@ -75,7 +73,7 @@ export default function NavBar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-700 text-white hover:bg-gray-900 hover:text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

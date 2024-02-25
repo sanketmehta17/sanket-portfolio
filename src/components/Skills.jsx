@@ -14,7 +14,7 @@ const techs = [
     {
         id: 3,
         techName: "Cloud",
-        techStacks: ["Amazon Web Services", "Google Cloud Platform"]
+        techStacks: ["Amazon Web Services (AWS)", "Google Cloud Platform (GCP)"]
     },
     {
         id: 4,
@@ -30,24 +30,24 @@ const techs = [
 export default function Skills(){
     return(
         <>
-            <div className="bg-white py-8 sm:py-8" id="Skills">
-                <div className="bg-emerald-500 rounded-3xl mx-auto max-w-7xl px-6 py-6 lg:px-8">            
+            <div className="bg-white py-8 px-8" id="Skills">
+                <div className="bg-gray-200 rounded-3xl mx-auto max-w-screen-2xl sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-6 pb-6 lg:px-8">            
                     <div className="mx-auto max-w-2xl">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 pt-6 sm:text-4xl">Technical Skills</h2>
+                        <h2 className="text-3xl uppercase font-light tracking-tight text-gray-900 py-4 sm:text-4xl">Technical Skills</h2>
                     </div>
-                    <div className="mx-auto mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t text-black border-gray-200 pt-6 sm:mt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <div className="mx-auto grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 border-t text-black whitespace-nowrap border-gray-900 pt-6 sm:pt-10 lg:max-w-none md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                         {techs.map((tech) => (
-                            <div key={tech.id} className="flex-1 border border-black rounded-3xl">
-                                <div className="text-2xl font-mono py-4 border-b">
+                            <div key={tech.id} className="text-left">
+                                <div className="text-2xl font-mono">
                                     {tech.techName}
                                 </div>                                    
-                                    <div className="my-2 grid grid-cols-2">
-                                        {tech.techStacks.map((techStack) => (
-                                            <div>                                            
-                                                {techStack}
-                                            </div>
-                                        ))} 
-                                    </div>
+                                <div className={"my-2 grid " + (tech.techStacks.length > 2 ? "grid-cols-2" : "grid-cols-1")}>
+                                    {tech.techStacks.map((techStack, index) => (
+                                        <div key={index}>                                            
+                                            {techStack}
+                                        </div>
+                                    ))} 
+                                </div>
                             </div>                                                       
                         ))}                        
                     </div>

@@ -4,10 +4,10 @@ import ContactLinks from './ContactLinks';
 export default function Footer() {
   return (
 
-  <footer className="bg-neutral-200 justify-stretch text-white dark:bg-neutral-600 w-full">
+  <footer className="bg-white/90 justify-stretch text-gray-800 w-full">
     
     <div className="my-5">
-      <ContactLinks />
+      <ContactLinks parent="Footer" />
     </div>
   </footer>
   );

@@ -5,10 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanket Protfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+      var replacers = document.querySelectorAll('[data-replace]');
+      for(var i=0; i<replacers.length; i++){
+          let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+          Object.keys(replaceClasses).forEach(function(key) {
+              replacers[i].classList.remove(key);
+              replacers[i].classList.add(replaceClasses[key]);
+          });
+      }
+    });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://kit.fontawesome.com/76604c8743.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   </body>
 </html>
