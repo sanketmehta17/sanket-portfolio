@@ -1,9 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-export default function Testimonials(){
+export default function Testimonials({testimonialUpdatedFlag}){
 
     const [testimonials, setTestimonials] = useState([]);
+
+    const [curr, setCurr] = useState(0)
 
     useEffect(() => {
         const fetchTestimonials = async () => {
@@ -15,9 +17,8 @@ export default function Testimonials(){
             }
         }
         fetchTestimonials();
-    }, [])
-    
-    const [curr, setCurr] = useState(0)
+        setCurr(0);
+    }, [testimonialUpdatedFlag])
 
     const next = () => {
         setCurr((prev) => (prev == testimonials.length - 1 ? 0 : curr + 1))
@@ -38,7 +39,7 @@ export default function Testimonials(){
                     <h2 className="text-3xl uppercase font-light tracking-tight text-gray-900 sm:text-4xl mb-4">Testimonials</h2>
                     <div className="carousel w-full">
                         {testimonials.reverse().map((testimonial, index) => (
-                            <div id={index} class="transition-transform carousel-item w-full duration-700 ease-in-out" style={{transform: `translateX(-${curr * 100}%)`}}>
+                            <div key={index} class="transition-transform carousel-item w-full duration-700 ease-in-out" style={{transform: `translateX(-${curr * 100}%)`}}>
                                 <div className="mx-auto max-w-2xl lg:max-w-4xl">
                                     <figure className="mt-10 border border-gray-800 rounded-3xl p-6" key={testimonial.id}>
                                         <blockquote className="text-center break-words text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">

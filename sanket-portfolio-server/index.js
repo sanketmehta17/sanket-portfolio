@@ -29,7 +29,6 @@ app.post('/createTestimonial', (req, res) => {
     req.body.role,
     req.body.testimonial
   ]
-
   connection.query(query, [values], (err, data) => {
     if(err) return res.json(err);
     return res.json("Inserted successfully!");
@@ -43,10 +42,6 @@ app.get('/getTestimonials', (req, res) => {
     return res.json(data)
   })
 })
-
-app.get('/api', (req, res) => {
-  res.json({message: "Hello from server!"});
-});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);

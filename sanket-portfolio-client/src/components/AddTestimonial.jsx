@@ -8,7 +8,7 @@ export default function AddTestimonial(){
                 <p className="font-normal text-black my-auto sm:mb-2 mb-2">
                     Would you like to add a testimonial?
                 </p>
-                <button data-modal-target="testimony-modal" data-modal-toggle="testimony-modal" class="text-sm mb-6 sm:mb-0 text-white rounded-lg border hover:text-black hover:bg-white hover:border-black">Add a Testimonial</button>
+                <button data-modal-target="testimonial-modal" data-modal-toggle="testimonial-modal" class="text-sm mb-6 sm:mb-0 text-white rounded-lg border hover:text-black hover:bg-white hover:border-black">Add a Testimonial</button>
             </div>
         </div> 
         </>

@@ -2,25 +2,17 @@ import { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Hero from './Hero'
-import Contact from './Contact'
 import Skills from './Skills'
 import Projects from './Projects'
 import WorkExperience from './WorkExperience'
 import About from './About'
 import BackgroundPolygon from './BackgroundPolygon'
 import Testimonials from './Testimonials'
-import ModalTestimony from './ModalTestimony'
-import AddTestimonial from './AddTestimonial'
+import ModalTestimonial from './ModalTestimonial'
 
-function App() {
-  const [count, setCount] = useState(0);
-  const [data, setData] = useState(null);
+function Home() {
 
-  useEffect(() => {
-    fetch("http://localhost:3001/api")
-    .then((res) => res.json())
-    .then((data) => setData(data.message));
-  }, []);
+  const [testimonialsUpdated, setTestimonialsUpdated] = useState(false);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -32,7 +24,12 @@ function App() {
     return () => {
       document.body.removeChild(script);
     }
-  })
+  }, [])
+
+
+  function updateTestimonialUpdatedFlag(flag){
+    setTestimonialsUpdated(flag);
+  }
 
   return (
     <>
@@ -47,9 +44,8 @@ function App() {
         <WorkExperience />
         <BackgroundPolygon />
         <Projects />
-        <Testimonials />
-        <ModalTestimony />
-        <AddTestimonial />
+        <Testimonials testimonialUpdatedFlag = {testimonialsUpdated} />
+        <ModalTestimonial testimonialFlag = {updateTestimonialUpdatedFlag} />
         <div className='fixed end-6 bottom-16 group'>
           <button className="p-2 text-center text-sm font-normal text-white rounded-xl animate-bounce shadow-lg shadow-gray-600 inline-flex hover:border-black">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 mr-1 my-auto fill-current">
@@ -64,4 +60,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
