@@ -40,7 +40,7 @@ export default function NavBar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto rounded-3xl"
-                    src="./Images/Profile.JPG"
+                    src="./assets/Images/Profile.JPG"
                     alt="Your Company"
                   />
                 </div>
