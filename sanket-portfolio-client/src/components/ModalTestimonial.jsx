@@ -72,7 +72,7 @@ export default function ModalTestimonial({testimonialFlag}){
         e.preventDefault();
         if(valid()){
             try{
-                await axios.post("http://localhost:3001/createTestimonial", testimonial)
+                await axios.post("https://sanket-portfolio-server.vercel.app/createTestimonial", testimonial)
                 setSubmitted(true);
                 testimonialFlag(true);
                 setOpenModal(false)

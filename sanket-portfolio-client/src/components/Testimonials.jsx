@@ -10,7 +10,7 @@ export default function Testimonials({testimonialUpdatedFlag}){
     useEffect(() => {
         const fetchTestimonials = async () => {
             try{
-                const res = await axios.get("http://localhost:3001/getTestimonials")
+                const res = await axios.get("https://sanket-portfolio-server.vercel.app/getTestimonials")
                 setTestimonials(res.data);
             }catch(err){
                 console.log(err);
