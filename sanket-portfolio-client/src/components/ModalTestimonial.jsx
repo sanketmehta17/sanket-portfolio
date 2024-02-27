@@ -56,6 +56,14 @@ export default function ModalTestimonial({testimonialFlag}){
         return valid;
     }
 
+    function resetInputs(){
+        setTestimonial({
+            name: "",
+            role: "",
+            testimonial: "",
+        });
+    }
+
     function resetError(){
         SetNameError("")
         SetRoleError("")
@@ -63,19 +71,22 @@ export default function ModalTestimonial({testimonialFlag}){
     }
 
     function closeModal(){
-        resetError()
+        resetInputs();
+        resetError();
         setOpenModal(false)
     }
 
     const handleSubmit = async e => {
         setLoading(true)
         e.preventDefault();
+        console.log(testimonial);
         if(valid()){
             try{
                 await axios.post("https://sanket-portfolio-server.vercel.app/createTestimonial", testimonial)
                 setSubmitted(true);
                 testimonialFlag(true);
                 setOpenModal(false)
+                resetInputs();
                 setInterval(() => {
                     setSubmitted(null);
                 }, 3000);
@@ -99,7 +110,7 @@ export default function ModalTestimonial({testimonialFlag}){
                 <button onClick={() => setOpenModal(true)} className="text-sm mb-6 sm:mb-0 text-white rounded-lg border hover:text-black hover:bg-white hover:border-black">Add a Testimonial</button>
             </div>
         </div>
-        <Modal show={openModal} onClose={() => setOpenModal(false)}>
+        <Modal show={openModal} onClose={() => closeModal()}>
             <Modal.Body>
                 <form name="formTestimonial" method="post" className="p-4 md:p-6">
                     <div className="grid gap-4 mb-4 grid-cols-2">
