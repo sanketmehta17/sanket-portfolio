@@ -9,7 +9,7 @@ export default function About(){
                 </div>
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t border-gray-900 pt-8 lg:max-w-none sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                     <div className="my-auto">
-                        <img className="rounded-3xl" src="./assets/Images/Profile.JPG"></img>
+                        <img className="rounded-3xl" src="./Images/Profile.JPG"></img>
                     </div>
                     <div className="text-justify lg:text-sm xl:text-lg leading-7 text-gray-600 space-y-5">
                         <p>
