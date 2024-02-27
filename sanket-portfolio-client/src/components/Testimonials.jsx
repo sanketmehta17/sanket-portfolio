@@ -57,7 +57,7 @@ export default function Testimonials({testimonialUpdatedFlag}){
                                             </div>
                                         </figcaption> 
                                     </figure>
-                                    <hr class="w-48 h-1 mx-auto mt-6 bg-gray-100 border-0 rounded dark:bg-gray-700" />
+                                    <hr class="w-48 h-1 mx-auto mt-6 border-0 rounded bg-gray-700" />
                                 </div>
                             </div>
                         ))} 
