@@ -43,6 +43,10 @@ app.get('/getTestimonials', (req, res) => {
   })
 })
 
+app.get('/', () => {
+  return "Server listening!"
+})
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
