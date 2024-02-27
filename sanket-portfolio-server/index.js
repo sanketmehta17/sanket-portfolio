@@ -43,9 +43,9 @@ app.get('/getTestimonials', (req, res) => {
   })
 })
 
-app.get('/', () => {
-  return "Server listening!"
-})
+app.use('/', (req, res) => {
+  res.send("Server is running!");
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
