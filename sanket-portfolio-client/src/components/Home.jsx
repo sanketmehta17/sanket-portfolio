@@ -40,7 +40,6 @@ function Home() {
         <About />
         <BackgroundPolygon />
         <Skills />
-        <BackgroundPolygon />
         <WorkExperience />
         <BackgroundPolygon />
         <Projects />
