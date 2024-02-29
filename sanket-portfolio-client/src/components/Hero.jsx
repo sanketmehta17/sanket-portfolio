@@ -16,13 +16,13 @@ export default function Hero() {
   }
 
   useEffect(() => {
-    window.addEventListener('load', stopAnimation)
-  }, [loaded])
+    stopAnimation();
+  }, [])
 
   return (
       <div className="bg-[url('./assets/Images/Profile.JPG')] bg-cover bg-center bg-no-repeat mt-16">
         <div className="relative isolate px-6 lg:px-8 backdrop-blur-sm pt-48 pb-4 sm:pt-64 sm:pb-6 md:pt-82 md:pb-8 lg:pt-96 lg:pb-10">
-          {/* <div className={loaded ? "transition-all delay-300 translate-y-0 lg:-translate-y-16 duration-1000 ease-in-out" : "transition-all backdrop-blur-sm delay-500 translate-y-96 opacity-0 duration-700 ease-in-out"}> */}
+          <div className={loaded ? "transition-all delay-300 translate-y-0 lg:-translate-y-16 duration-1000 ease-in-out" : "transition-all backdrop-blur-sm delay-500 translate-y-96 opacity-0 duration-700 ease-in-out"}>
             <div className="mx-auto max-w-2xl py-14 sm:py-24 lg:py-32 rounded-lg bg-white/30">
                 <h1 className="mt-4 font-bold tracking-tight text-xl text-gray-900 sm:text-xl md:text-3xl lg:text-4xl">
                   Hi! I am a Software Developer.
@@ -36,7 +36,7 @@ export default function Hero() {
                   </a>
                 </div>
             </div>
-          {/* </div> */}
+          </div>
           
         </div>
       </div>
