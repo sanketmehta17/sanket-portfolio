@@ -4,12 +4,12 @@ const techs = [
     {
         id: 1,
         techName: "Front-end",
-        techStacks: ["ReactJS", "BootStrap", "Tailwind CSS", "HTML5", "CSS3", "jQuery", "AJAX",]
+        techStacks: ["ReactJS", "BootStrap", "Tailwind CSS", "HTML5", "CSS3", "jQuery", "AJAX", "JavaScript"]
     },
     {
         id: 2,
         techName: "Back-end",
-        techStacks: [".NET", "Java", "Python", "JavaScript", "PHP", "C#", "C++", "C"]
+        techStacks: [".NET", "Java", "Python", "PHP", "C#", "C++", "C"]
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const techs = [
     {
         id: 5,
         techName: "Others",
-        techStacks: ["REST", "Laravel", "Docker", "XSLT", "XML"]
+        techStacks: ["REST", "Laravel", "Docker", "XSLT", "XML", "MVC"]
     }
 ]
 export default function Skills(){
