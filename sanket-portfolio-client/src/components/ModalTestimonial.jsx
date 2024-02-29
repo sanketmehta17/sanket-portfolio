@@ -79,7 +79,6 @@ export default function ModalTestimonial({testimonialFlag}){
     const handleSubmit = async e => {
         setLoading(true)
         e.preventDefault();
-        console.log(testimonial);
         if(valid()){
             try{
                 await axios.post("https://sanket-portfolio-server.vercel.app/createTestimonial", testimonial)
