@@ -11,7 +11,7 @@ export default function About(){
     }, []);
 
     return(
-        <div className="bg-white pb-8 pt-16 px-8 fadeInElement" id="About" data-aos="fade-in">
+        <div className="bg-white pb-8 pt-16 px-8 fadeInElement" id="About" data-aos="fade-in" data-aos-duration="1800">
             <div className=" bg-gray-200 rounded-3xl mx-auto max-w-screen-2xl sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-6 pb-6 lg:px-8">
                 <div className="mx-auto max-w-2xl">
                     <h2 className="text-3xl uppercase font-light tracking-tight py-4 text-gray-900 sm:text-4xl">About Me</h2>
