@@ -47,6 +47,14 @@ const projects = [
           'Money Manager is an application built for Android OS and aims to help users have a better look at their current financial situation and manage their cashflow. There are two target users for this design: personal user and small business user, with the option to change between profiles. The application design is implemented using the MVC architectural pattern.',        
         technologies: ['Android', 'Java', 'Kotlin'],
       },
+      {
+        id: 7,
+        title: 'Portfolio',
+        href: 'https://github.com/sanketmehta17/sanket-portfolio',
+        description:
+          'This is a portfolio web application built using Tailwind CSS, ReactJS and NodeJS for front-end and back-end. It also uses Amazon Web Services(AWS) for its RDS database instance for storing testimonial information.',        
+        technologies: ['ReactJS', 'NodeJS', 'Tailwind CSS', "AWS"],
+      },
   ]
   
   const techColor = [
@@ -81,6 +89,10 @@ const projects = [
     {
       technology: 'Android',
       color: 'bg-sky-800'
+    },
+    {
+      technology: 'Tailwind CSS',
+      color: 'bg-indigo-800'
     },
 ]
 
