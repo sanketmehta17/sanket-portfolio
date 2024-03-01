@@ -106,7 +106,7 @@ export default function ModalTestimonial({testimonialFlag}){
                 <p className="font-normal text-black my-auto sm:mb-2 mb-2">
                     Would you like to add a testimonial?
                 </p>
-                <button onClick={() => setOpenModal(true)} className="text-sm mb-6 sm:mb-0 text-white rounded-lg border hover:text-black hover:bg-white hover:border-black">Add a Testimonial</button>
+                <button onClick={() => setOpenModal(true)} className="text-sm mb-6 sm:mb-0 text-white bg-gray-800 rounded-lg border hover:text-black hover:bg-white hover:border-black">Add a Testimonial</button>
             </div>
         </div>
         <Modal show={openModal} onClose={() => closeModal()}>
