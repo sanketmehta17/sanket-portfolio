@@ -9,7 +9,7 @@ const techs = [
     {
         id: 2,
         techName: "Back-end",
-        techStacks: [".NET", "Java", "Python", "PHP", "C#", "C++", "C"]
+        techStacks: [".NET", "NodeJS", "Java", "Kotlin", "Android", "Python", "PHP", "C#", "C++", "C"]
     },
     {
         id: 3,

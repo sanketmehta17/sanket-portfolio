@@ -61,7 +61,7 @@ const jobs = [
                       {jobs[0].Title}
                   </h3>
                 </div>
-                <div className="flex flex-col text-right text-gray-500 text-xs">
+                <div className="flex flex-col mt-2 sm:mt-0 sm:text-right text-left text-gray-500 text-xs">
                   <div className="">
                     {jobs[0].FromDate} - {jobs[0].ToDate}
                   </div>
@@ -91,15 +91,15 @@ const jobs = [
                         <div className="group relative">
                           <h3 className="text-lg text-left font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                               <span className="absolute inset-0" />
-                              {jobs[0].Title}
+                              {job.Title}
                           </h3>
                         </div>
-                        <div className="flex flex-col text-right text-gray-500 text-xs">
+                        <div className="flex flex-col mt-2 sm:mt-0 sm:text-right text-left text-gray-500 text-xs">
                           <div className="">
-                            {jobs[0].FromDate} - {jobs[0].ToDate}
+                            {job.FromDate} - {job.ToDate}
                           </div>
                           <div className="">
-                            {jobs[0].Location}
+                            {job.Location}
                           </div>
                         </div>
                       </div> 

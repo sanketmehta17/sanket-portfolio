@@ -8,10 +8,10 @@ export default function About(){
                     <h2 className="text-3xl uppercase font-light tracking-tight py-4 text-gray-900 sm:text-4xl">About Me</h2>
                 </div>
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t border-gray-900 pt-8 lg:max-w-none sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                    <div className="my-auto">
-                        <img className="rounded-3xl" src="./Images/Profile.JPG"></img>
+                    <div className="">
+                        <img className="rounded-3xl mx-auto" src="./Images/ProfileAbout.JPG"></img>
                     </div>
-                    <div className="text-justify lg:text-sm xl:text-lg leading-7 text-gray-600 space-y-5">
+                    <div className="text-justify lg:text-xs xl:text-base 2xl:text-xl leading-7 text-gray-600 space-y-5">
                         <p>
                         After completing my Bachelor's in Information & Technology in India, I pursued Master's in Applied Computer Science at Dalhousie University in Canada. 
                         Subsequently, I secured a Software Developer position in September 2023, where I oversee end-to-end development of line-of-business applications. 

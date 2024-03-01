@@ -6,7 +6,6 @@ const projects = [
       description:
         'This is a console-based Java application to trace the COVID positive contacts; a scale-down version of government’s contact tracing application using various software development tactics and testing and debugging for the efficiency.',
       technologies: ['Java'],
-      colors: ['bg-gray-500']
       },
     {
         id: 2,
@@ -15,7 +14,6 @@ const projects = [
         description:
           'This is a lightweight database management system built as a console-based Java application. It includes various modules such as query parsing, query executing and identification of database queries such as DML, DDL, and also SQL dump and ERD generation.',
         technologies: ['Java'],
-        colors: ['bg-gray-500']
       },
       {
         id: 3,
@@ -24,7 +22,6 @@ const projects = [
         description:
           'This is a console-based Java application performing features such as medical history (paperless document storage at one place), appointment, laboratory management, user management, vaccination, information on nearby camps, insurance policies, blood bank, billing, pharmacy and feedback for doctors. It also included few services keeping in mind current pandemic situation for COVID such as request for beds, plasma and ventilators. ',
         technologies: ['Java'],
-        colors: ['bg-gray-500']
       },
       {
         id: 4,
@@ -33,7 +30,6 @@ const projects = [
         description:
           'This is a serverless project using backend as a service, to make a multi-cloud model providing services for multi-factor authentication, message passing, image matching using machine learning, withdrawal and report generation.',
         technologies: ['ReactJS', 'NodeJS', 'GCP', 'AWS'],
-        colors: ['bg-gray-500', 'bg-blue-700', 'bg-gray-400', 'bg-blue-400']
       },
       {
           id: 5,
@@ -42,8 +38,15 @@ const projects = [
           description:
             'A python flask application to the AWS Elastic Beanstalk which allowed users to use the services such as buy, rent, donate, search and request a book and email notifications were sent to the user using various cloud services such as SNS, Lambda, Cognito and DynamoDB.',        
           technologies: ['AWS', 'Python'],
-          colors: ['bg-gray-500', 'bg-blue-700']
-        },
+      },
+      {
+        id: 6,
+        title: 'Money Manager',
+        href: 'https://github.com/sanketmehta17/MoneyManager',
+        description:
+          'Money Manager is an application built for Android OS and aims to help users have a better look at their current financial situation and manage their cashflow. There are two target users for this design: personal user and small business user, with the option to change between profiles. The application design is implemented using the MVC architectural pattern.',        
+        technologies: ['Android', 'Java', 'Kotlin'],
+      },
   ]
   
   const techColor = [
@@ -70,6 +73,14 @@ const projects = [
     {
       technology: 'Python',
       color: 'bg-red-400'
+    },
+    {
+      technology: 'Kotlin',
+      color: 'bg-sky-400'
+    },
+    {
+      technology: 'Android',
+      color: 'bg-sky-800'
     },
 ]
 
