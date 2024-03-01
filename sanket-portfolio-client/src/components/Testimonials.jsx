@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Transition } from "@headlessui/react";
 
 export default function Testimonials({testimonialUpdatedFlag}){
 
