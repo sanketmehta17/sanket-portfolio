@@ -1,9 +1,17 @@
 import React from "react";
+import AOS from 'aos';
 
 export default function BackgroundPolygon(){
+
+    React.useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+        }, []);
+
     return(
         <>
-        <div className="relative isolate px-6 lg:px-8">
+        <div className="relative isolate px-6 lg:px-8" data-aos="fade-in" data-aos-duration="1800">
             <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-[100px] sm:-top-80"
             aria-hidden="true"

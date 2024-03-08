@@ -1,5 +1,4 @@
 import React from "react";
-import { useSpring, config } from 'react-spring';
 import AOS from 'aos';
 
 export default function About(){

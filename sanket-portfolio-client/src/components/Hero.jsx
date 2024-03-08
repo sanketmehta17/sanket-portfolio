@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="relative isolate px-6 lg:px-8 backdrop-blur-sm pt-48 pb-12 sm:pt-64 sm:pb-6 md:pt-82 md:pb-44 lg:pt-96 lg:pb-24">
           <div className={loaded ? "transition-all delay-300 translate-y-0 lg:-translate-y-16 duration-1000 ease-in-out" : "transition-all backdrop-blur-sm delay-500 translate-y-96 opacity-0 duration-700 ease-in-out"}>
             <div className="mx-auto max-w-2xl rounded-lg bg-white/30 py-14 sm:py-16 lg:py-20">
-              <div class="font-bold tracking-tight uppercase text-3xl text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl px-10">SANKET MEHTA</div>
+              <div className="font-bold tracking-tight uppercase text-3xl text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl px-10">SANKET MEHTA</div>
                   <h1 className="mt-4 font-bold tracking-tight text-xl text-gray-900 sm:text-xl md:text-3xl lg:text-4xl">
                     Hi! I am a Software Developer.
                   </h1>

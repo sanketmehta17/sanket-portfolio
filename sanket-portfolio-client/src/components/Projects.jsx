@@ -2,16 +2,16 @@ import React from "react";
 import AOS from 'aos';
 
 const projects = [
+    // {
+    //   id: 1,
+    //   title: 'COVID19 Contact Tracer',
+    //   href: 'https://github.com/sanketmehta17/COVID19_ContactTracer',
+    //   description:
+    //     'This is a console-based Java application to trace the COVID positive contacts; a scale-down version of government’s contact tracing application using various software development tactics and testing and debugging for the efficiency.',
+    //   technologies: ['Java'],
+    //   },
     {
-      id: 1,
-      title: 'COVID19 Contact Tracer',
-      href: 'https://github.com/sanketmehta17/COVID19_ContactTracer',
-      description:
-        'This is a console-based Java application to trace the COVID positive contacts; a scale-down version of government’s contact tracing application using various software development tactics and testing and debugging for the efficiency.',
-      technologies: ['Java'],
-      },
-    {
-        id: 2,
+        id: 1,
         title: 'Database Prototype',
         href: 'https://github.com/sanketmehta17/DatabasePrototype',
         description:
@@ -19,7 +19,7 @@ const projects = [
         technologies: ['Java'],
       },
       {
-        id: 3,
+        id: 2,
         title: 'Hospital Management System',
         href: 'https://github.com/sanketmehta17/HospitalManagementSystem',
         description:
@@ -27,7 +27,7 @@ const projects = [
         technologies: ['Java'],
       },
       {
-        id: 4,
+        id: 3,
         title: 'Safe Deposit',
         href: 'https://github.com/sanketmehta17/SafeDeposit_Frontend',
         description:
@@ -35,7 +35,7 @@ const projects = [
         technologies: ['ReactJS', 'NodeJS', 'GCP', 'AWS'],
       },
       {
-          id: 5,
+          id: 4,
           title: 'E-Bookstore',
           href: 'https://github.com/sanketmehta17/E-Bookstore/tree/sanket_ushangbhai_mehta',
           description:
@@ -43,7 +43,7 @@ const projects = [
           technologies: ['AWS', 'Python'],
       },
       {
-        id: 6,
+        id: 5,
         title: 'Money Manager',
         href: 'https://github.com/sanketmehta17/MoneyManager',
         description:
@@ -51,7 +51,7 @@ const projects = [
         technologies: ['Android', 'Java', 'Kotlin'],
       },
       {
-        id: 7,
+        id: 6,
         title: 'Portfolio',
         href: 'https://github.com/sanketmehta17/sanket-portfolio',
         description:
@@ -132,7 +132,7 @@ const projects = [
                 <div className="flex gap-2 mt-2">
                   {project.technologies.map((technology, index) => (
                     <div key={index}>
-                        <span class={getTechColor(technology) + " text-white text-xs font-extralight me-2 px-2.5 py-0.5 rounded"}>{technology}</span>
+                        <span className={getTechColor(technology) + " text-white text-xs font-extralight me-2 px-2.5 py-0.5 rounded"}>{technology}</span>
                     </div>
                   ))}
                 </div>

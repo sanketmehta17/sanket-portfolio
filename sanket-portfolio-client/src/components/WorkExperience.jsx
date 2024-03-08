@@ -67,9 +67,9 @@ const jobs = [
           <div className="mx-auto max-w-2xl">
             <h2 className="text-3xl uppercase font-light tracking-tight text-gray-900 py-4 sm:text-4xl">Work Experience</h2>
           </div>
-          <div className="mx-auto max-w-xl gap-x-8 gap-y-6 border-t border-gray-900 pt-6 sm:pt-16 lg:mx-0 lg:max-w-none flex lg:flex-row sm:gap-x-20 flex-col">
+          <div className="mx-auto max-w-xl gap-x-8 gap-y-6 border-t border-gray-900 pt-6 sm:pt-16 lg:mx-0 lg:max-w-none flex lg:flex-col sm:gap-x-20 flex-col">
           <div className="">
-            <article key={jobs[0].id} className="flex max-w-3xl flex-col">   
+            <article key={jobs[0].id} className="flex max-w-full flex-col">   
               <div className="flex sm:flex-row flex-col justify-between">
                 <div className="group relative">
                   <h3 className="text-lg text-left font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
@@ -102,7 +102,7 @@ const jobs = [
             {jobs.map((job) => (
               <div key={job.id} className={(job == jobs[jobs.length - 1]) ? "mt-10" : "mt-0"}>
                 {job != jobs[0] && (
-                    <article key={job.id} className="flex max-w-3xl flex-col">
+                    <article key={job.id} className="flex max-w-full flex-col">
                       <div className="flex sm:flex-row flex-col justify-between">
                         <div className="group relative">
                           <h3 className="text-lg text-left font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
