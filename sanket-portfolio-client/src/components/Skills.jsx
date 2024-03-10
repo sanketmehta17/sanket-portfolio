@@ -46,10 +46,10 @@ export default function Skills(){
                     <div className="mx-auto grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 border-t text-black whitespace-nowrap border-gray-900 pt-6 sm:pt-10 lg:max-w-none md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
                         {techs.map((tech) => (
                             <div key={tech.id} className="text-left">
-                                <div className="text-2xl font-mono">
+                                <div className="text-lg font-semibold text-gray-900">
                                     {tech.techName}
                                 </div>                                    
-                                <div className={"my-2 grid " + (tech.techStacks.length > 2 ? "grid-cols-2" : "grid-cols-1")}>
+                                <div className={"my-2 text-gray-600 text-base grid " + (tech.techStacks.length > 2 ? "grid-cols-2" : "grid-cols-1")}>
                                     {tech.techStacks.map((techStack, index) => (
                                         <div key={index}>                                            
                                             {techStack}

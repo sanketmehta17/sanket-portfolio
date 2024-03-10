@@ -117,7 +117,7 @@ const projects = [
           <div className="mx-auto max-w-2xl">
             <h2 className="text-3xl uppercase font-light tracking-tight py-4 text-gray-900 sm:text-4xl">Projects</h2>
           </div>
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t border-gray-900 pt-6 sm:pt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t border-gray-900 pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {projects.map((project) => (
               <article key={project.id} className="flex max-w-2xl flex-col transition ease-in-out duration-300 hover:translate-y-1 hover:scale-100">
                 <div className="group relative">
@@ -127,12 +127,12 @@ const projects = [
                       {project.title}
                     </a>
                   </h3>
-                  <p className="mt-5 text-sm text-justify leading-6 text-gray-600">{project.description}</p>
+                  <p className="mt-5 text-base text-justify leading-6 text-gray-600">{project.description}</p>
                 </div>
                 <div className="flex gap-2 mt-2">
                   {project.technologies.map((technology, index) => (
                     <div key={index}>
-                        <span className={getTechColor(technology) + " text-white text-xs font-extralight me-2 px-2.5 py-0.5 rounded"}>{technology}</span>
+                        <span className={getTechColor(technology) + " text-white text-base font-extralight me-2 px-2.5 py-0.5 rounded"}>{technology}</span>
                     </div>
                   ))}
                 </div>
