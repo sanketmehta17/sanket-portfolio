@@ -6,7 +6,7 @@ const projects = [
       id: 1,
       title: 'Executive Dashboard',
       description:
-        'This project aims to create a centralized platform tailored for executives and decision-makers, consolidating data from multiple departments and systems to present a real-time overview of the company\'s performance. Beyond delivering essential metrics, the dashboard integrates additional functionalities, providing a comprehensive tool for decision-makers to access critical information and streamline various processes within the organization. In addition it uses a centralized data lake that is specifically designed to serve as a unified data source, ensuring data integrity and consistency across the organization.',
+        'This project aims to create a centralized platform tailored for executives and decision-makers, consolidating data from multiple departments and systems to present a real-time overview of the company\'s performance. Beyond delivering essential metrics, the dashboard integrates additional functionalities, providing a comprehensive tool for decision-makers to access critical information and streamline various processes within the organization. In addition, it uses a centralized data lake that is specifically designed to serve as a unified data source, ensuring data integrity and consistency across the organization.',
       technologies: ['ASP.NET', 'HTML5', 'CSS3', 'Javascript', 'C#', 'XSLT'],
     },
     {
@@ -213,7 +213,7 @@ const projects = [
                       }                      
                     </div>
                   </h3>
-                  <p className="mt-5 text-base text-justify leading-6 text-gray-600">{project.description}</p>
+                  <p className="mt-1 text-base text-justify leading-6 text-gray-600">{project.description}</p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.technologies.map((technology, index) => (
