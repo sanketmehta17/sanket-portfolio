@@ -7,7 +7,7 @@ const projects = [
       title: 'Executive Dashboard',
       description:
         'This project aims to create a centralized platform tailored for executives and decision-makers, consolidating data from multiple departments and systems to present a real-time overview of the company\'s performance. Beyond delivering essential metrics, the dashboard integrates additional functionalities, providing a comprehensive tool for decision-makers to access critical information and streamline various processes within the organization. In addition, it uses a centralized data lake that is specifically designed to serve as a unified data source, ensuring data integrity and consistency across the organization.',
-      technologies: ['ASP.NET', 'HTML5', 'CSS3', 'Javascript', 'C#', 'XSLT'],
+      technologies: ['ASP.NET', 'HTML5', 'CSS3', 'Javascript', 'C#', 'Bootstrap', 'XSLT'],
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const projects = [
       title: 'Repair Tracker',
       description:
         'This is a customer-facing web application designed for efficient repair tracking, management, and invoicing. Utilizing Bootstrap for an enhanced user experience, the application is integral to store employees\' workflow. It seamlessly handles large-scale image storage for repairs, employing an Repair Expiration Identification System to dispose expired images and maintain storage efficiency. Integrated with a Windows service for customer communication, the app also incorporates QR code functionality to uniquely identify repairs, facilitating streamlined processes through easy scan. Overall, it is a comprehensive solution that combines user-friendly design with intricate features for effective repair management and customer communication.',
-        technologies: ['ASP.NET', 'HTML5', 'CSS3', 'Javascript', 'C#'],
+        technologies: ['ASP.NET', 'HTML5', 'CSS3', 'Javascript', 'C#', 'Bootstrap'],
     },
     {
       id: 5,
@@ -171,6 +171,10 @@ const projects = [
     {
       technology: 'XSLT',
       color: 'bg-amber-300'
+    },
+    {
+      technology: 'Bootstrap',
+      color: 'bg-emerald-300'
     },
 ]
 
