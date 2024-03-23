@@ -22,7 +22,7 @@ export default function About(){
                     <div className="text-justify lg:text-xs xl:text-base 2xl:text-xl leading-7 text-gray-600 space-y-5">
                         <p>
                         After completing my Bachelor's in Information & Technology in India, I pursued Master's in Applied Computer Science at Dalhousie University in Canada. 
-                        Subsequently, I secured a Software Developer position in September 2022, where I oversee end-to-end development of line-of-business applications. 
+                        Subsequently, I secured a Software Developer position in October 2022, where I oversee end-to-end development of line-of-business applications. 
                         </p>
                         <p>
                         The experience of leaving my home country has provided invaluable life lessons, complemented by a strong technical foundation gained through diverse projects and teamwork. In my current 
