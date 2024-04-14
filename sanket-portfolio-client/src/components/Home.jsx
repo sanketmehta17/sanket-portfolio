@@ -44,8 +44,8 @@ function Home() {
         <WorkExperience />
         <BackgroundPolygon />
         <Projects />
-        <Testimonials testimonialUpdatedFlag = {testimonialsUpdated} />
-        <ModalTestimonial testimonialFlag = {updateTestimonialUpdatedFlag} />
+        {/* <Testimonials testimonialUpdatedFlag = {testimonialsUpdated} /> */}
+        {/* <ModalTestimonial testimonialFlag = {updateTestimonialUpdatedFlag} /> */}
         <a href='/Sanket Mehta - Resume.pdf' download="Sanket Mehta - Resume" className='fixed end-6 bottom-16 group'>
           <button className="p-2 bg-gray-800 text-center text-sm font-normal text-white rounded-xl shadow-lg shadow-gray-600 inline-flex hover:border-black">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 mr-1 my-auto fill-current">

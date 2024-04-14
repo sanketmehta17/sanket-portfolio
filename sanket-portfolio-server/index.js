@@ -22,26 +22,26 @@ var connection = mysql.createConnection({
   database: DATABASE
 })
 
-app.post('/createTestimonial', (req, res) => {
-  const query = "INSERT INTO TESTIMONIALS(`name`, `role`, `testimonial`) VALUES (?)"
-  const values = [
-    req.body.name,
-    req.body.role,
-    req.body.testimonial
-  ]
-  connection.query(query, [values], (err, data) => {
-    if(err) return res.json(err);
-    return res.json("Inserted successfully!");
-  })
-})
+// app.post('/createTestimonial', (req, res) => {
+//   const query = "INSERT INTO TESTIMONIALS(`name`, `role`, `testimonial`) VALUES (?)"
+//   const values = [
+//     req.body.name,
+//     req.body.role,
+//     req.body.testimonial
+//   ]
+//   connection.query(query, [values], (err, data) => {
+//     if(err) return res.json(err);
+//     return res.json("Inserted successfully!");
+//   })
+// })
 
-app.get('/getTestimonials', (req, res) => {
-  const query = "SELECT * FROM TESTIMONIALS ORDER BY id DESC"
-  connection.query(query, (err, data) => {
-    if(err) return res.json(err)
-    return res.json(data)
-  })
-})
+// app.get('/getTestimonials', (req, res) => {
+//   const query = "SELECT * FROM TESTIMONIALS ORDER BY id DESC"
+//   connection.query(query, (err, data) => {
+//     if(err) return res.json(err)
+//     return res.json(data)
+//   })
+// })
 
 app.use('/', (req, res) => {
   res.send("Server is running!");
