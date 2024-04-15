@@ -25,7 +25,7 @@ const techs = [
     {
         id: 5,
         techName: "Others",
-        techStacks: ["REST", "Laravel", "Docker", "XSLT", "XML", "MVC"]
+        techStacks: ["REST", "Laravel", "Docker", "XSLT", "XML", "MVC", "Kubernetes", "TDD"]
     }
 ]
 export default function Skills(){
